@@ -21,7 +21,7 @@ export function Navbar() {
         className="fixed top-0 left-0 w-full h-[36px] sm:h-[44px] bg-black z-[40] flex items-center justify-center shadow-xl pointer-events-auto"
       >
         <img 
-          src="/logo-letra.png" 
+          src={`${import.meta.env.BASE_URL}logo-letra.png`}
           alt="Filorix" 
           className="h-3 sm:h-4 md:h-5 object-contain drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] opacity-90"
         />

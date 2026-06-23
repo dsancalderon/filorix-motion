@@ -38,7 +38,7 @@ export function Hero() {
         {/* Top Center Logo */}
         <div className="absolute top-[20px] md:top-[20px] left-1/2 -translate-x-1/2 z-40 flex justify-center pointer-events-auto">
           <img 
-            src="/logo.png" 
+            src={`${import.meta.env.BASE_URL}logo.png`}
             alt="Filorix Logo" 
             className="w-12 sm:w-16 md:w-20 object-contain drop-shadow-[0_4px_6px_rgba(0,0,0,0.7)]"
           />
