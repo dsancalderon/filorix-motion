@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Infinity } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export function AboutUs() {
   return (
