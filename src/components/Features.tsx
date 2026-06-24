@@ -5,12 +5,12 @@ import { WordsPullUpMultiStyle } from './WordsPullUpMultiStyle';
 
 export function Features() {
   const headerSegments = [
-    { text: 'Studio-grade workflows for visionary creators. ', className: 'text-[#E1E0CC]' },
-    { text: 'Built for pure vision. Powered by art.', className: 'text-gray-500' }
+    { text: 'Nuestros ', className: 'text-[#E1E0CC]' },
+    { text: 'proyectos mas destacados.', className: 'text-gray-500' }
   ];
 
   return (
-    <section id="features" className="relative z-10 min-h-screen bg-black py-20 px-4 md:px-6">
+    <section id="portafolio" className="relative z-10 min-h-screen bg-black py-20 px-4 md:px-6">
       <div className="absolute inset-0 bg-noise opacity-[0.15] pointer-events-none mix-blend-overlay" />
       
       <div className="max-w-[1400px] mx-auto relative z-10">

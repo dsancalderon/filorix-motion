@@ -48,7 +48,7 @@ export function About() {
   };
 
   return (
-    <section id="our-story" className="relative z-10 bg-black py-20 px-4 md:px-6">
+    <section id="servicios" className="relative z-10 bg-black py-20 px-4 md:px-6">
       <div className="bg-[#101010] rounded-2xl md:rounded-[2rem] p-8 md:p-16 lg:p-24 max-w-6xl mx-auto flex flex-col items-center text-center">
         <span className="text-primary text-[10px] sm:text-xs uppercase tracking-widest mb-8 md:mb-12">Nuestros Servicios</span>
         
