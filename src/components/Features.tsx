@@ -11,7 +11,7 @@ export function Features() {
   const projects = [
     {
       title: 'Proyecto 01',
-      videoUrl: 'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260406_133058_0504132a-0cf3-4450-a370-8ea3b05c95d4.mp4'
+      videoUrl: `${import.meta.env.BASE_URL}triler-villa.mp4`
     },
     {
       title: 'Proyecto 02',
