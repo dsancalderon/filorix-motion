@@ -48,10 +48,18 @@ export function AboutUs() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
             className="flex-1 w-full"
           >
-            <div className="bg-[#101010] border border-white/5 rounded-2xl md:rounded-[2rem] aspect-square sm:aspect-video lg:aspect-[4/3] flex flex-col items-center justify-center p-8 relative overflow-hidden group">
-              <div className="absolute inset-0 bg-noise opacity-[0.1] mix-blend-overlay pointer-events-none" />
-              <Infinity className="w-16 h-16 sm:w-20 sm:h-20 text-[#333] mb-6 group-hover:scale-110 transition-transform duration-700 ease-out" />
-              <span className="text-[#666] text-sm uppercase tracking-widest font-medium">Posibilidades infinitas</span>
+            <div className="rounded-2xl md:rounded-[2rem] aspect-square sm:aspect-video lg:aspect-[4/3] flex flex-col items-center justify-center relative overflow-hidden group">
+              <video 
+                autoPlay 
+                loop 
+                muted 
+                playsInline 
+                className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                src={`${import.meta.env.BASE_URL}video-logo-clip.mp4`}
+              />
+              
+              {/* Black square overlay to obscure the watermark */}
+              <div className="absolute bottom-0 right-0 w-24 sm:w-32 h-12 sm:h-16 bg-black z-10" />
             </div>
           </motion.div>
 
