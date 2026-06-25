@@ -41,6 +41,9 @@ export function Hero() {
             src={`${import.meta.env.BASE_URL}logo.png`}
             alt="Filorix Logo" 
             className="w-12 sm:w-16 md:w-20 object-contain drop-shadow-[0_4px_6px_rgba(0,0,0,0.7)]"
+            fetchPriority="high"
+            loading="eager"
+            decoding="sync"
           />
         </div>
 

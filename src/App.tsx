@@ -1,21 +1,26 @@
+import React, { Suspense } from 'react';
 import { Hero } from './components/Hero';
-import { About } from './components/About';
-import { Features } from './components/Features';
 import { Navbar } from './components/Navbar';
-import { AboutUs } from './components/AboutUs';
-import { Contact } from './components/Contact';
-import { Footer } from './components/Footer';
+
+// Lazy loading para componentes que no están "above the fold"
+const About = React.lazy(() => import('./components/About').then(m => ({ default: m.About })));
+const Features = React.lazy(() => import('./components/Features').then(m => ({ default: m.Features })));
+const AboutUs = React.lazy(() => import('./components/AboutUs').then(m => ({ default: m.AboutUs })));
+const Contact = React.lazy(() => import('./components/Contact').then(m => ({ default: m.Contact })));
+const Footer = React.lazy(() => import('./components/Footer').then(m => ({ default: m.Footer })));
 
 function App() {
   return (
     <main className="bg-black min-h-screen">
       <Navbar />
       <Hero />
-      <About />
-      <Features />
-      <AboutUs />
-      <Contact />
-      <Footer />
+      <Suspense fallback={<div className="h-20 bg-black" />}>
+        <About />
+        <Features />
+        <AboutUs />
+        <Contact />
+        <Footer />
+      </Suspense>
     </main>
   );
 }
