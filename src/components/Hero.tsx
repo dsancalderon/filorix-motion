@@ -21,6 +21,7 @@ export function Hero() {
           loop
           muted
           playsInline
+          poster={`${import.meta.env.BASE_URL}hero-poster.jpg`}
           className="absolute inset-0 w-full h-full object-cover"
           src={`${import.meta.env.BASE_URL}hero-video.mp4`}
         />
